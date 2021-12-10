@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/x-icon" href="RSP.jpg">
+</head>
+<body>
+    
+    <div class="header">
+        <a href="" class="logo">RSP TRAVEL MANAGEMENT</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a class="active" href="about.html">About</a>
+          <a class="active" href="login.html">Login</a>
+
+        </div>
+    </div>
+                 
+      <div style="padding-left:20px">
+        
+      </div>
+      <div class="content">
+        <div class="a">     
+          <h1>Welcome</h1>
+            <p>RSP TRAVEL MANAGEMENT TEAM GIVES YOU BEST OF ALL</p>
+              <p>BROWSE ALL THE SECTIONS </p>
+                    <p>LOGIN TO EXPLORE MUCH MORE!!!!!!!!!</p>
+                            
+     </div>
+        <div class="images">
+           <img src="bus.jpg">
+           <img src="pic2.jpg">
+           <img src="pic3.jpg">
+           <img src="pic4.jpg">
+           <img src="pic1.jpg">
+        </div>
+     </div>
+     <script>
+        var indexValue = 0;
+        function slideShow(){
+          setTimeout(slideShow, 2500);
+          var x;
+          const img = document.querySelectorAll("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
+        }
+        slideShow();
+     </script>
+
+    </div>
+</body>
+</html>
