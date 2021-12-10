@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="update.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">RSP TRAVEL MANAGEMENT</a>
+        <div class="header-right">
+          <a class="active" href="update.html">Update</a>
+          <a class="active" href="search.html">Search</a>
+          <a class="active" href="overview.html">Overview</a>
+          <a class="active" href="logout.html">Logout</a>
+
+        </div>
+ </div>
+ <div class="container1">
+     <h3>Update</h3>
+    
+    <div class="row">
+      <div class="column">
+       <h3>Update the correct information</h3>
+       <h3>This data is important so fill it carefully</h3>
+       
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+        
+          <label for="NO.OF Vehicle AVAILABLE">NUMBER OF VEHICLE AVAILABLE</label>  
+          <input type="number" id="vehicle_num"  placeholder="No. of vehicles">
+          </select>
+          <label for="Vehicle Type">Vehicle Type</label>
+          <select id="Vehicle Type" name="VEHICHLE TYPE">
+              <option value="australia">Select option</option>
+              <option value="australia">Car</option>
+              <option value="canada">Bus</option>
+              <option value="usa">Auto</option>
+              
+            </select>
+            <label for="Location name">Location...</label>
+            <input type="text" id="location"  placeholder="Add/update location name">
+          
+            
+            <label for="Location id">Location id...</label>
+              
+          <input type="alphanumeric" id="locationid"  placeholder="Add/update location id">
+          
+            <label for="Route name">Route Name...</label>
+            <input type="text" id="route_name"  placeholder="Add/update Name of route">
+          
+            
+              
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
